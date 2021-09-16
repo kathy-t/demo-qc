@@ -2,7 +2,7 @@ version: 1.2
 workflows:
    - name: demo-fastqc-wf
      subclass: nfl
-     primaryDescriptorPath: /demo-fastqc-wf/nextflow.config
+     primaryDescriptorPath: /nextflow.config
      testParameterFiles:
           -  /demo-fastqc-wf/tests/test-job-1.json
      filters:
