@@ -1,0 +1,10 @@
+version: 1.2
+workflows:
+   - name: demo-fastqc-wf
+     subclass: NFL
+     primaryDescriptorPath: /demo-fastqc-wf/main.nf
+     testParameterFiles:
+          -  /demo-fastqc-wf/tests/test-job-1.json
+     filters:
+         branches:
+             - main
