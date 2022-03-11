@@ -16,3 +16,11 @@ workflows:
      filters:
          branches:
              - main             
+   - name: actual-demo-fastqc
+     subclass: nfl
+     primaryDescriptorPath: /demo-fastqc/nextflow.config
+     testParameterFiles:
+          - /demo-fastqc/tests/test-job-1.json
+     filters:
+         branches:
+             - main 
